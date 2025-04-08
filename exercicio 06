@@ -1,0 +1,11 @@
+class Aluno {
+    public string Nome { get; set; }
+    public int Matricula { get; set; }
+}
+
+Aluno BuscaAlunoPorMatricula(Aluno[] alunos, int matricula) {
+    foreach (Aluno aluno in alunos) {
+        if (aluno.Matricula == matricula) return aluno;
+    }
+    return null;
+}
