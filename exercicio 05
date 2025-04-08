@@ -1,0 +1,6 @@
+int EncontrarMultiplo(int[] array, int x) {
+    foreach (int item in array) {
+        if (item % x == 0) return item;
+    }
+    return -1;
+}
