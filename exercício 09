@@ -1,0 +1,9 @@
+int BuscaComSentinela(int[] array, int valor) {
+    int n = array.Length;
+    Array.Resize(ref array, n + 1);
+    array[n] = valor;
+
+    int i = 0;
+    while (array[i] != valor) i++;
+    return (i < n) ? i : -1;
+}
