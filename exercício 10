@@ -1,0 +1,3 @@
+int BuscaPalavra(string texto, string palavra) {
+    return texto.IndexOf(palavra);
+}
