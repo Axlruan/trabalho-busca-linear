@@ -1,3 +1,19 @@
-int BuscaPalavra(string texto, string palavra) {
-    return texto.IndexOf(palavra);
+using System;
+
+class Programa {
+    static void Main(string[] args) {
+        Console.WriteLine("Digite o texto:");
+        string texto = Console.ReadLine();
+
+        Console.WriteLine("Digite a palavra que deseja buscar:");
+        string palavra = Console.ReadLine();
+
+        int posicao = texto.IndexOf(palavra);
+
+        if (posicao != -1) {
+            Console.WriteLine($"A palavra '{palavra}' foi encontrada na posição {posicao}.");
+        } else {
+            Console.WriteLine($"A palavra '{palavra}' não foi encontrada no texto.");
+        }
+    }
 }
