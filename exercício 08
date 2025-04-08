@@ -1,0 +1,6 @@
+int PrimeiroPar(int[] array) {
+    foreach (int item in array) {
+        if (item % 2 == 0) return item;
+    }
+    return -1;
+}
