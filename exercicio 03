@@ -1,0 +1,6 @@
+int BuscaNome(string[] nomes, string nome) {
+    for (int i = 0; i < nomes.Length; i++) {
+        if (nomes[i].Equals(nome)) return i;
+    }
+    return -1;
+}
