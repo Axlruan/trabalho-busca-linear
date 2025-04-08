@@ -1,0 +1,8 @@
+(int maior, int menor) MaiorMenor(int[] array) {
+    int maior = array[0], menor = array[0];
+    foreach (int item in array) {
+        if (item > maior) maior = item;
+        if (item < menor) menor = item;
+    }
+    return (maior, menor);
+}
